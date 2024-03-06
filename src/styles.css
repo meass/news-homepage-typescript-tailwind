@@ -7,11 +7,11 @@
 }
 
 body {
-  @apply relative;
+  @apply relative bg-off-white;
 }
 
 .header {
-  @apply flex justify-between max-w-[1110px] mx-auto py-12 max-md:py-6 items-center px-4;
+  @apply flex justify-between max-w-[1110px] mx-auto py-12 max-lg:py-6 items-center px-4;
 }
 
 #menu {
@@ -19,7 +19,7 @@ body {
 }
 
 .header nav ul {
-  @apply flex max-md:hidden;
+  @apply flex max-lg:hidden;
 }
 
 .header nav ul li {
@@ -35,26 +35,30 @@ body {
 }
 
 .banner-container {
-  @apply mr-8 max-w-[730px] max-md:mr-0;
+  @apply mr-8 max-lg:mr-0;
 }
 
 article {
-  @apply flex pt-10 items-end max-md:items-start max-md:pt-0 max-md:flex-col;
+  @apply flex pt-9 max-lg:items-start max-lg:pt-6 max-lg:flex-col;
 }
 
 article h1 {
-  @apply text-5xl font-extrabold max-md:text-3xl py-6;
+  @apply text-[56px] leading-[3.5rem] font-extrabold max-lg:text-3xl;
+}
+
+article div {
+  @apply max-w-[348px] w-full;
 }
 
 article button {
-  @apply bg-soft-red text-white px-8 py-4 uppercase tracking-widest mt-8 max-md:my-6 hover:bg-black;
+  @apply bg-soft-red text-white px-8 py-4 uppercase tracking-widest mt-8 max-lg:my-6 hover:bg-black;
 }
 
 main {
-  @apply max-w-[1110px] mx-auto flex max-md:flex-col px-4;
+  @apply max-w-[1110px] mx-auto flex max-lg:flex-col px-4;
 }
 aside {
-  @apply bg-dark-blue text-off-white px-6 py-4 max-w-[350px] max-md:max-w-full w-full max-md:my-8;
+  @apply bg-dark-blue text-off-white px-6 py-4 max-w-[350px] max-lg:max-w-full w-full max-lg:my-8;
 }
 
 aside ul li {
@@ -78,11 +82,11 @@ aside ul li p {
 }
 
 section {
-  @apply flex max-md:flex-col max-w-[1110px] mx-auto my-16 justify-between max-md:mt-0 px-4;
+  @apply flex max-lg:flex-col max-w-[1110px] mx-auto my-16 justify-between max-lg:mt-0 px-4;
 }
 
 section .container {
-  @apply flex max-w-[350px] w-full max-md:pt-8;
+  @apply flex max-w-[350px] w-full max-lg:pt-8;
 }
 
 section .container div:first-child {
