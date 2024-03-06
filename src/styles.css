@@ -1,0 +1,126 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+*, *::after, *::before {
+  @apply font-Inter;
+}
+
+body {
+  @apply relative;
+}
+
+.header {
+  @apply flex justify-between max-w-[1110px] mx-auto py-12 max-md:py-6 items-center px-4;
+}
+
+#menu {
+  @apply ml-auto md:hidden;
+}
+
+.header nav ul {
+  @apply flex max-md:hidden;
+}
+
+.header nav ul li {
+  @apply px-6 text-dark-grayish-blue hover:text-soft-red;
+}
+
+.header nav ul li:first-child {
+  @apply pl-0;
+}
+
+.header nav ul li:last-child {
+  @apply pr-0;
+}
+
+.banner-container {
+  @apply mr-8 max-w-[730px] max-md:mr-0;
+}
+
+article {
+  @apply flex pt-10 items-end max-md:items-start max-md:pt-0 max-md:flex-col;
+}
+
+article h1 {
+  @apply text-5xl font-extrabold max-md:text-3xl py-6;
+}
+
+article button {
+  @apply bg-soft-red text-white px-8 py-4 uppercase tracking-widest mt-8 max-md:my-6 hover:bg-black;
+}
+
+main {
+  @apply max-w-[1110px] mx-auto flex max-md:flex-col px-4;
+}
+aside {
+  @apply bg-dark-blue text-off-white px-6 py-4 max-w-[350px] max-md:max-w-full w-full max-md:my-8;
+}
+
+aside ul li {
+  @apply py-6 border-b border-b-white hover:text-soft-orange;
+}
+
+aside ul li:last-child {
+  @apply border-b-0 pb-0;
+}
+
+aside h1 {
+  @apply text-4xl font-bold text-soft-orange;
+}
+
+aside ul li h2 {
+  @apply text-xl font-bold;
+}
+
+aside ul li p {
+  @apply font-light text-grayish-blue pt-2;
+}
+
+section {
+  @apply flex max-md:flex-col max-w-[1110px] mx-auto my-16 justify-between max-md:mt-0 px-4;
+}
+
+section .container {
+  @apply flex max-w-[350px] w-full max-md:pt-8;
+}
+
+section .container div:first-child {
+  @apply max-w-[100px] w-full mr-6;
+}
+
+section .container div:last-child {
+  @apply leading-8;
+}
+
+section .container div:last-child h2 {
+  @apply text-grayish-blue text-2xl font-bold;
+}
+
+section .container div:last-child h3 {
+  @apply text-dark-blue font-extrabold hover:text-soft-red;
+}
+
+section .container div:last-child p {
+  @apply text-dark-grayish-blue;
+}
+
+#mobile-navbar {
+  @apply w-full h-full bg-dark-blue bg-opacity-50 fixed top-0 z-10 transform translate-x-full transition-transform duration-300;
+}
+
+#mobile-navbar.active {
+  @apply md:hidden translate-x-0;
+}
+
+#mobile-navbar ul {
+  @apply max-w-64 w-full bg-white h-full ml-auto pt-32 pl-6;
+}
+
+#mobile-navbar ul li {
+  @apply mt-9 font-semibold;
+}
+
+#btn-close {
+  @apply fixed right-0 top-0 p-5;
+}
